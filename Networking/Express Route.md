@@ -1,0 +1,1 @@
+If there are on-premises + azure architecture, and needs to be highly available, use this
