@@ -1,3 +1,24 @@
-* Distributes incoming load of requests
-* Can use port forwarding
-* Creates outbound rules for backend services
+*  **Load Balancer Purpose**:
+    - Distributes traffic among multiple VMs.
+    - Ensures efficient traffic management and prevents overloading a single VM.
+- **Scenario**:
+    - Online business experiencing increased traffic.
+    - Initial VM overloaded, necessitating the addition of a second VM.
+- **Functionality**:
+    - Load balancer captures inbound traffic before it reaches VMs.
+    - Distributes traffic to backend pool instances (VMs) based on rules and health probes.
+- **Components**:
+    - **Inbound Flows**: Any traffic from the internet or local VNet.
+    - **Frontend**: The access point for all traffic to the VMs.
+    - **Backend Pool Instances**: VMs receiving traffic from the load balancer.
+    - **Rules and Health Probes**: Direct traffic and ensure VMs are ready to receive traffic.
+- **Health Probes**:
+    - Ensure VMs are healthy and ready to receive traffic.
+    - Prevent traffic from being sent to unhealthy VMs.
+- **Scenarios for Load Balancer Use**:
+    - Balancing incoming traffic.
+    - Balancing traffic from internal networks in Azure and hybrid scenarios.
+    - Port forwarding to specific ports on specific machines.
+    - Providing outbound connectivity for VMs in the backend pool.
+- **Conclusion**:
+    - Load balancers are essential for managing traffic and ensuring efficient operation of multiple VMs.
